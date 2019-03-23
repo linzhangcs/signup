@@ -19,8 +19,8 @@
                         <h1 class="m-0">
                             <a href="#">
                                 <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <title>Swift</title>
-                                    <defs>
+                                    <title>SWIFT</title>
+                                    <!-- <defs>
                                         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="logo-b">
                                             <stop stop-color="#A8A3F6" offset="0%"/>
                                             <stop stop-color="#DAD8FF" offset="100%"/>
@@ -35,7 +35,7 @@
                                     <g transform="translate(-7 -7)" fill="none" fill-rule="evenodd">
                                         <use fill="url(#logo-b)" transform="rotate(45 23 23)" xlink:href="#logo-a"/>
                                         <use fill="url(#logo-d)" transform="scale(-1 1) rotate(45 0 -32.527)" xlink:href="#logo-c"/>
-                                    </g>
+                                    </g> -->
                                 </svg>
                             </a>
                         </h1>
@@ -50,16 +50,24 @@
                     <div class="hero-inner">
                         <div class="hero-copy">
                             <div class="container-sm">
-                                <h1 class="hero-title h2-mobile mt-0 is-revealing">Swift</h1>
-                                <p class="hero-paragraph is-revealing">Get early access to the smart meeting tool!</p>
+                                <h1 class="hero-title h2-mobile mt-0 is-revealing">SWIFT</h1>
+                                <p class="hero-paragraph is-revealing">Swift is a web application that helps with meeting preparation and integrates into existing meeting setup workflow to create agenda-driven meetings.
+
+</p>
+                                <form class="success-none" id="new-contact">
                                 <div class="hero-form newsletter-form field field-grouped is-revealing">
                                     <div class="control control-expanded">
-                                        <input class="input" type="email" name="email" placeholder="Your best email&hellip;">
+                                        <input class="input" id="email" type="email" name="email" placeholder="Your best email&hellip;">
                                     </div>
                                     <div class="control">
-                                        <a class="button button-primary button-block button-shadow" href="#">Get early access</a>
+                                        <input type="submit" value="Get early access" name="subscribe" id="subscribe" class="button button-primary button-block button-shadow">
                                     </div>
                                 </div>
+                              </form>
+                              <div class="success">
+                                <p>Thank you for signing up!</p>
+                              </div>
+                            </form>
                             </div>
                         </div>
                         <div class="hero-illustration">
@@ -225,6 +233,7 @@
                                             <path d="M103.49 70.27L52 0v110l50.89-36.011a2.637 2.637 0 0 0 1.077-1.732 2.669 2.669 0 0 0-.476-1.987z" fill="url(#browser-n)"/>
                                         </g>
                                     </g>
+                                    <image x="20" y="50" width="650" height="360" xlink:href="img/swiftdone.png"/>
                                 </svg>
                             </div>
                             <div class="hero-ball hero-ball-3 is-revealing">
@@ -330,25 +339,26 @@
                             </a>
                         </li>
                     </ul> -->
-                    <div class="footer-copyright">&copy; 2018 Swift, all rights reserved</div>
+                    <div class="footer-copyright">&copy; 2019 SWIFT, all rights reserved</div>
                 </div>
             </div>
         </footer>
     </div>
 
-<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCJ_aB6KdLpKjhLe29dABClw8_PtD_uSDg",
-    authDomain: "test-67717.firebaseapp.com",
-    databaseURL: "https://test-67717.firebaseio.com",
-    projectId: "test-67717",
-    storageBucket: "test-67717.appspot.com",
-    messagingSenderId: "1008090308069"
-  };
-  firebase.initializeApp(config);
-</script>
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-functions.js"></script>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 </html>
